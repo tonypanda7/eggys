@@ -1,0 +1,35 @@
+{
+  "name": "eggdrop-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal, high-performance backend for Campus Egg Delivery Platform",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:seed": "tsx src/db/seed.ts",
+    "test": "vitest run"
+  },
+  "keywords": ["campus", "delivery", "eggdrop", "fastify", "drizzle", "postgresql"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.14",
+    "@fastify/cors": "^10.0.1",
+    "@fastify/jwt": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.38.3",
+    "fastify": "^5.2.1",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.30.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.3"
+  }
+}
